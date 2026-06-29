@@ -71,6 +71,7 @@ add_executable(indi_lx200generic
     lx200fs2.cpp
     lx200ss2000pc.cpp
     lx200_OnStep.cpp
+    lx200_OnStep_OpenAstroExplorer.cpp
     lx200_OpenAstroTech.cpp
     lx200_pegasus_nyx101.cpp
     lx200_10micron.cpp
@@ -103,6 +104,7 @@ execute_process(COMMAND \"${CMAKE_COMMAND}\" -E create_symlink indi_lx200generic
 execute_process(COMMAND \"${CMAKE_COMMAND}\" -E create_symlink indi_lx200generic \$ENV{DESTDIR}${BIN_INSTALL_DIR}/indi_lx200fs2)\n
 execute_process(COMMAND \"${CMAKE_COMMAND}\" -E create_symlink indi_lx200generic \$ENV{DESTDIR}${BIN_INSTALL_DIR}/indi_lx200ss2000pc)\n
 execute_process(COMMAND \"${CMAKE_COMMAND}\" -E create_symlink indi_lx200generic \$ENV{DESTDIR}${BIN_INSTALL_DIR}/indi_lx200_OnStep)\n
+execute_process(COMMAND \"${CMAKE_COMMAND}\" -E create_symlink indi_lx200generic \$ENV{DESTDIR}${BIN_INSTALL_DIR}/indi_lx200_OnStep_OpenAstroExplorer)\n
 execute_process(COMMAND \"${CMAKE_COMMAND}\" -E create_symlink indi_lx200generic \$ENV{DESTDIR}${BIN_INSTALL_DIR}/indi_lx200_OpenAstroTech)\n
 execute_process(COMMAND \"${CMAKE_COMMAND}\" -E create_symlink indi_lx200generic \$ENV{DESTDIR}${BIN_INSTALL_DIR}/indi_lx200_pegasus_nyx101)\n
 execute_process(COMMAND \"${CMAKE_COMMAND}\" -E create_symlink indi_lx200generic \$ENV{DESTDIR}${BIN_INSTALL_DIR}/indi_lx200_10micron)\n

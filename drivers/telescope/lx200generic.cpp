@@ -32,6 +32,7 @@ Updated driver to use INDI::Telescope (JM)
 #include "lx200_10micron.h"
 #include "lx200_16.h"
 #include "lx200_OnStep.h"
+#include "lx200_OnStep_OpenAstroExplorer.h"
 #include "lx200_OpenAstroTech.h"
 #include "lx200ap_v2.h"
 #include "lx200ap_gtocp2.h"
@@ -91,6 +92,11 @@ static class Loader
             {
                 IDLog("initializing from LX200 classic device...\n");
                 telescope.reset(new LX200Classic());
+            }
+            else if (strstr(getProgName(), "indi_lx200_OnStep_OpenAstroExplorer"))
+            {
+                IDLog("initializing from LX200 OnStep OpenAstroExplorer device...\n");
+                telescope.reset(new LX200_OnStep_OpenAstroExplorer());
             }
             else if (strstr(getProgName(), "indi_lx200_OnStep"))
             {

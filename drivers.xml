@@ -39,6 +39,10 @@
             <driver name="LX200 OnStep">indi_lx200_OnStep</driver>
             <version>1.27</version>
         </device>
+        <device label="LX200 OnStep OpenAstroExplorer" manufacturer="OpenAstroTech">
+            <driver name="LX200 OnStep OpenAstroExplorer">indi_lx200_OnStep_OpenAstroExplorer</driver>
+            <version>1.0</version>
+        </device>
         <device label="WARPDRIVE" manufacturer="WarpAstron">
             <driver name="LX200 OnStep">indi_lx200_OnStep</driver>
             <version>1.27</version>
