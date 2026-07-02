@@ -5160,7 +5160,7 @@ bool LX200_OnStep_OpenAstroExplorer::queryPolarAxis(int axisNumber, const char *
 bool LX200_OnStep_OpenAstroExplorer::queryPolarAxisAvailability(int axisNumber, const char *axisLabel)
 {
     char cmd[CMD_MAX_LEN] = {0};
-    const int written = snprintf(cmd, sizeof(cmd), ":F%dA#", axisNumber);
+    const int written = snprintf(cmd, sizeof(cmd), ":F%da#", axisNumber);
     if (written < 0 || static_cast<size_t>(written) >= sizeof(cmd))
     {
         LOGF_ERROR("OAE %s axis availability command formatting failed.", axisLabel);
